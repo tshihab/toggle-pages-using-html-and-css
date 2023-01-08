@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in or Sign up</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <img src="images/search.png" alt="">
+        </div>
+
+        <div class="form-box">
+
+            <!-- toggle buttons -->
+            <div class="button-box">
+
+                <div id="btn"></div>
+
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+
+                <button type="button" class="toggle-btn" onclick="signup()">Sign up</button>
+
+            </div>
+
+            <!-- social icons -->
+            <div class="social-icon">
+
+                <img src="images/fb.png" alt="">
+                <img src="images/google.png" alt="">
+                <img src="images/lnd.png" alt="">
+
+            </div>
+
+            <!-- login page -->
+            <form id="login" class="input-group">
+
+                <input type="text" class="input-field" placeholder="Username" required>
+
+                <input type="password" class="input-field" placeholder="Password" required>
+
+                <input type="checkbox" class="check-box"><span>Keep me signed in</span>
+                
+                <button type="submit" class="submit-btn">Log in</button>
+
+            </form>
+
+            <!-- signup page -->
+            <form id="signup" class="input-group">
+
+                <input type="text" class="input-field" placeholder="Username" required>
+
+                <input type="password" class="input-field" placeholder="Password" required>
+
+                <input type="email" class="input-field" placeholder="Email Address" required>
+
+                <div class="gender-section">
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="others" value="others">
+                    <label for="female">Others</label>
+                </div>
+
+                <input type="checkbox" class="check-box" required><span>Agree to terms and conditions</span>
+
+                <button type="submit" class="submit-btn">Sign Up</button>
+
+            </form>
+            
+        </div>
+    </div>
+
+    <script>
+        var btn1 = document.getElementById("login")
+        var btn2 = document.getElementById("signup")
+        var btn3 = document.getElementById("btn")
+
+        function signup(){
+            btn1.style.left = "-450px"
+            btn2.style.left = "50px"
+            btn3.style.left = "105px"
+        }
+
+        function login(){
+            btn1.style.left = "50px"
+            btn2.style.left = "450px"
+            btn3.style.left = "0"
+        }
+    </script>
+</body>
+</html>
