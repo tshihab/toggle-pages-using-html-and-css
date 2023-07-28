@@ -41,4 +41,4 @@ Use this section to outline areas that I want to continue focusing on in future 
 ## Author
 
 - Github - [@tshihab](https://github.com/tshihab)
-- Linkedin - [@Tuhshar Shihab](https://www.linkedin.com/in/tushar-shihab-08293015b/)
+- Linkedin - [@Tuhshar Shihab](https://www.linkedin.com/in/tshihab07/)
